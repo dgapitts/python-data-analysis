@@ -1,7 +1,12 @@
 ## Overview
 
-Sample python scripts from python-data-analysis course on Linkedin Learning
+Sample python scripts from python-data-analysis course on Linkedin Learning  (https://www.linkedin.com/learning/python-data-analysis-2015).
 
+My objectives are to 
+- enhance my python scripting
+- starting moving from python2.7 to python3.x
+- familiarizer myself with python numpy, pandas, matplotlib (I've already done simple line charts with pylab)
+- work with jupyter notebook
 
 ## Setup
 
