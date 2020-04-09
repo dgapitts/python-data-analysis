@@ -110,6 +110,7 @@ http://localhost:8889/?token=4bfb635934506cbc764660146e2e6d019f8282e6fa260df1
 Shutdown this notebook server (y/[n])? No answer for 5s: resuming operation...
 ```
 ### ex02-05-namedtuples-python27-script.py
+Ref: https://pymotw.com/2/collections/namedtuple.html
 ```
 ~/projects/python-data-analysis $ cat ex02-05-namedtuples-python27-script.py
 import collections
