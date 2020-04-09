@@ -109,4 +109,34 @@ http://localhost:8889/?token=4bfb635934506cbc764660146e2e6d019f8282e6fa260df1
  or http://127.0.0.1:8889/?token=4bfb635934506cbc764660146e2e6d019f8282e6fa260df1
 Shutdown this notebook server (y/[n])? No answer for 5s: resuming operation...
 ```
+### ex02-05-namedtuples-python27-script.py
+```
+~/projects/python-data-analysis $ cat ex02-05-namedtuples-python27-script.py
+import collections
+Person = collections.namedtuple('Person', 'name age gender')
 
+print 'Type of Person:', type(Person)
+
+bob = Person(name='Bob', age=30, gender='male')
+print '\nRepresentation:', bob
+
+jane = Person(name='Jane', age=29, gender='female')
+print '\nField by name:', jane.name
+
+print '\nFields by index:'
+for p in [ bob, jane ]:
+    print '%s is a %d year old %s' % p
+```
+output
+```
+~/projects/python-data-analysis $ python2.7 ex02-05-namedtuples-python27-script.py
+Type of Person: <type 'type'>
+
+Representation: Person(name='Bob', age=30, gender='male')
+
+Field by name: Jane
+
+Fields by index:
+Bob is a 30 year old male
+Jane is a 29 year old female
+```
