@@ -110,6 +110,7 @@ http://localhost:8889/?token=4bfb635934506cbc764660146e2e6d019f8282e6fa260df1
 Shutdown this notebook server (y/[n])? No answer for 5s: resuming operation...
 ```
 ### ex02-05-namedtuples-python27-script.py
+
 Ref: https://pymotw.com/2/collections/namedtuple.html
 ```
 ~/projects/python-data-analysis $ cat ex02-05-namedtuples-python27-script.py
@@ -141,3 +142,27 @@ Fields by index:
 Bob is a 30 year old male
 Jane is a 29 year old female
 ```
+
+
+
+### ex03-text-manipulation-and-files
+
+One confusing thing for me with jupyter is how to know and/or set my working directory within the host OS filesysteM? 
+So needed to python ues the os package 
+
+```
+import os
+arr = os.listdir()
+print(arr)
+```
+https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory
+
+Also I was curious to load data from a more interesting dataset i.e. a txt version of Percy Bysshe Shelley's "Prometheus Unbound" (http://www.gutenberg.org/cache/epub/4797/pg4797.txt), but then I also need to convert words into lines
+
+```
+You need str.split() to split each string into words:
+word_list = [word for line in sentence for word in line.split()]
+```
+https://stackoverflow.com/questions/8478602/convert-a-list-of-string-sentences-to-words
+
+
