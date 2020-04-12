@@ -109,6 +109,21 @@ http://localhost:8889/?token=4bfb635934506cbc764660146e2e6d019f8282e6fa260df1
  or http://127.0.0.1:8889/?token=4bfb635934506cbc764660146e2e6d019f8282e6fa260df1
 Shutdown this notebook server (y/[n])? No answer for 5s: resuming operation...
 ```
+
+### A little Help with getting started with Jupyter Notebooks
+
+Sounds a bit like vi i.e. a good start
+{quote}
+First, we need to know that they are 2 modes in the Jupyter Notebook App: command mode and edit mode.
+https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330
+{quote}
+
+The most important key to know is H for help, which appeaars to OS context sensitive:
+
+ ![alt text](Help-shortcuts-Jupyter-Notebooks.png "Help-shortcuts-Jupyter-Notebooks.png")
+
+
+
 ### ex02-05-namedtuples-python27-script.py
 
 Ref: https://pymotw.com/2/collections/namedtuple.html
