@@ -181,3 +181,46 @@ word_list = [word for line in sentence for word in line.split()]
 https://stackoverflow.com/questions/8478602/convert-a-list-of-string-sentences-to-words
 
 
+### ex03-reading-a-file-python2.7
+
+Ref: https://stackabuse.com/read-a-file-line-by-line-in-python/
+```
+~/projects/python-data-analysis $ cat ex03-filehandling.py
+filepath = 'Prometheus_Unbound.txt'
+with open(filepath) as fp:
+   line = fp.readline()
+   cnt = 1
+   while line:
+       print("Line {}: {}".format(cnt, line.strip()))
+       line = fp.readline()
+       cnt += 1
+```
+Running this:
+```
+~/projects/python-data-analysis $ python2.7 ex03-filehandling.py|head
+Line 1: PROMETHEUS UNBOUND. A LYRICAL DRAMA IN FOUR ACTS.
+Line 2:
+Line 3:
+Line 4: PROMETHEUS UNBOUND. A LYRICAL DRAMA IN FOUR ACTS.	1
+Line 5: PREFACE.	1
+Line 6: ACT 1.	4
+Line 7: ACT 2.	23
+Line 8: ACT 3.	38
+Line 9: ACT 4.	49
+Line 10:
+```
+and...
+```
+~/projects/python-data-analysis $ python2.7 ex03-filehandling.py|tail
+Line 4197: a month or two I shall send it. It is a drama, with characters and
+Line 4198: mechanism of a kind yet unattempted; and I think the execution is
+Line 4199: better than any of my former attempts.'
+Line 4200:
+Line 4201: I may mention, for the information of the more critical reader, that
+Line 4202: the verbal alterations in this edition of "Prometheus" are made from a
+Line 4203: list of errata written by Shelley himself.
+Line 4204:
+Line 4205: ***
+Line 4206:
+```
+
