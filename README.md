@@ -224,3 +224,111 @@ Line 4205: ***
 Line 4206:
 ```
 
+### Developing word split logic
+
+
+Create file with first 100 words
+```
+~/projects/python-data-analysis $ head -100 Prometheus_Unbound.txt > Prometheus_Unbound_first100_lines.txt
+~/projects/python-data-analysis $ cat Prometheus_Unbound_first100_lines.txt
+PROMETHEUS UNBOUND. A LYRICAL DRAMA IN FOUR ACTS.
+
+
+PROMETHEUS UNBOUND. A LYRICAL DRAMA IN FOUR ACTS.	1
+PREFACE.	1
+ACT 1.	4
+ACT 2.	23
+ACT 3.	38
+ACT 4.	49
+
+
+AUDISNE HAEC AMPHIARAE, SUB TERRAM ABDITE?
+
+[Composed at Este, September, October, 1818 (Act 1); at Rome,
+March-April 6, 1819 (Acts 2, 3); at Florence, close of 1819 (Act 4).
+Published by C. and J. Ollier, London, summer of 1820. Sources of the
+text are (1) edition of 1820; (2) text in "Poetical Works", 1839,
+prepared with the aid of a list of errata in (1) written out by
+Shelley; (3) a fair draft in Shelley's autograph, now in the Bodleian.
+This has been carefully collated by Mr. C.D. Locock, who prints the
+result in his "Examination of the Shelley Manuscripts in the Bodleian
+Library", Oxford (Clarendon Press), 1903. Our text is that of 1820,
+modified by edition 1839, and by the Bodleian fair copy. In the
+following notes B = the Bodleian manuscript; 1820 = the editio
+princeps, printed by Marchant for C. and J. Ollier, London; and 1839 =
+the text as edited by Mrs. Shelley in the "Poetical Works", 1st and
+2nd editions, 1839. The reader should consult the notes on the Play at
+the end of the volume.]
+
+
+PREFACE.
+
+The Greek tragic writers, in selecting as their subject any portion of
+their national history or mythology, employed in their treatment of it
+a certain arbitrary discretion. They by no means conceived themselves
+bound to adhere to the common interpretation or to imitate in story as
+in title their rivals and predecessors. Such a system would have
+amounted to a resignation of those claims to preference over their
+competitors which incited the composition. The Agamemnonian story was
+exhibited on the Athenian theatre with as many variations as dramas.
+
+I have presumed to employ a similar license. The "Prometheus Unbound"
+of Aeschylus supposed the reconciliation of Jupiter with his victim as
+the price of the disclosure of the danger threatened to his empire by
+the consummation of his marriage with Thetis. Thetis, according to
+this view of the subject, was given in marriage to Peleus, and
+Prometheus, by the permission of Jupiter, delivered from his captivity
+by Hercules. Had I framed my story on this model, I should have done
+no more than have attempted to restore the lost drama of Aeschylus; an
+ambition which, if my preference to this mode of treating the subject
+had incited me to cherish, the recollection of the high comparison
+such an attempt would challenge might well abate. But, in truth, I was
+averse from a catastrophe so feeble as that of reconciling the
+Champion with the Oppressor of mankind. The moral interest of the
+fable, which is so powerfully sustained by the sufferings and
+endurance of Prometheus, would be annihilated if we could conceive of
+him as unsaying his high language and quailing before his successful
+and perfidious adversary. The only imaginary being resembling in any
+degree Prometheus, is Satan; and Prometheus is, in my judgement, a
+more poetical character than Satan, because, in addition to courage,
+and majesty, and firm and patient opposition to omnipotent force, he
+is susceptible of being described as exempt from the taints of
+ambition, envy, revenge, and a desire for personal aggrandisement,
+which, in the Hero of "Paradise Lost", interfere with the interest.
+The character of Satan engenders in the mind a pernicious casuistry
+which leads us to weigh his faults with his wrongs, and to excuse the
+former because the latter exceed all measure. In the minds of those
+who consider that magnificent fiction with a religious feeling it
+engenders something worse. But Prometheus is, as it were, the type of
+the highest perfection of moral and intellectual nature, impelled by
+the purest and the truest motives to the best and noblest ends.
+
+This Poem was chiefly written upon the mountainous ruins of the Baths
+of Caracalla, among the flowery glades, and thickets of odoriferous
+blossoming trees, which are extended in ever winding labyrinths upon
+its immense platforms and dizzy arches suspended in the air. The
+bright blue sky of Rome, and the effect of the vigorous awakening
+spring in that divinest climate, and the new life with which it
+drenches the spirits even to intoxication, were the inspiration of
+this drama.
+
+The imagery which I have employed will be found, in many instances, to
+have been drawn from the operations of the human mind, or from those
+external actions by which they are expressed. This is unusual in
+modern poetry, although Dante and Shakespeare are full of instances of
+the same kind: Dante indeed more than any other poet, and with greater
+success. But the Greek poets, as writers to whom no resource of
+awakening the sympathy of their contemporaries was unknown, were in
+the habitual use of this power; and it is the study of their works
+(since a higher merit would probably be denied me) to which I am
+willing that my readers should impute this singularity.
+
+One word is due in candour to the degree in which the study of
+contemporary writings may have tinged my composition, for such has
+been a topic of censure with regard to poems far more popular, and
+indeed more deservedly popular, than mine. It is impossible that any
+one who inhabits the same age with such writers as those who stand in
+the foremost ranks of our own, can conscientiously assure himself that
+his language and tone of thought may not have been modified by the
+study of the productions of those extraordinary intellects. It is
+```
